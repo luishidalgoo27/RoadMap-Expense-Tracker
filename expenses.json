@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "date": "2025-06-17",
+        "description": "Ola",
+        "amount": 2
+    },
+    {
+        "id": 3,
+        "date": "2025-06-17",
+        "description": "a",
+        "amount": 1
+    },
+    {
+        "id": 4,
+        "date": "2025-06-17",
+        "description": "ola",
+        "amount": 2
+    }
+]
