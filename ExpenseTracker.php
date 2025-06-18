@@ -120,7 +120,11 @@ global $argc, $argv;
 
 if($argc < 2){
     echo "Use: \n";
-    echo "php ExpenseTracker add \n";
+    echo "php ExpenseTracker add --description `description` --amount `20` \n";
+    echo "php ExpenseTracker list \n";
+    echo "php ExpenseTracker summary \n";
+    echo "php ExpenseTracker symmary --month `6` \n";
+    echo "php ExpenseTracker delete --id `2` \n";
 }
 
 $command = $argv[1];
@@ -176,6 +180,14 @@ switch($command)
         deleteExpense((int)$options['id']);
         break;
 
+    case 'help':
+        echo "Use: \n";
+        echo "php ExpenseTracker add --description `description` --amount `20` \n";
+        echo "php ExpenseTracker list \n";
+        echo "php ExpenseTracker summary \n";
+        echo "php ExpenseTracker symmary --month `6` \n";
+        echo "php ExpenseTracker delete --id `2` \n";
+        break;
     default:
         echo "Unknown command: $command\n";
         exit(1);
